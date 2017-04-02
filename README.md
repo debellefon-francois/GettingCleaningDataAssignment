@@ -19,7 +19,7 @@ For each data set (train and test), we get :
 * X values, and name its columns with the unique features names.
 
 
-### Merging the values
+## Merging the values
 Then, for each X values, we add two columns :
 * The subjects
 * The activities names, that we got from a transcodification from the Y values with the "activity_labels".
@@ -27,9 +27,9 @@ Then, for each X values, we add two columns :
 Then, we bind the two datasets together.
 
 
-### Substracting Means and Standard Deviations
+## Substracting Means and Standard Deviations
 We then only want to keep the "identifying variables" (subject, activity), and the "mean" and "Standard Deviation" variables.
 For that, we only keep the columns name that end with "mean()" or "std()".
 
-### Averaging means and standard deviations
+## Averaging means and standard deviations
 We then average the means and standard deviations for each subject and activity.
