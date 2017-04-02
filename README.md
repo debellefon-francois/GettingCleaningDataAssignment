@@ -9,7 +9,7 @@ This script takes into input files from the following adress : https://d396qusza
 
 ###Common data
 We first extract datas that are common to both "train" and "test" datasets :
-* features names fromt the "features" file. Some are redundant, so we make them unique, by using the "make.unique" function, which adds sequence numbers to duplicates.
+* features names fromt the "features" file. Some are redundant, so we make them unique, by using the "make.unique" function, which adds sequence numbers to duplicates. Hence, we can use check.names as "FALSE" when we read the data.
 * Transcodification table for activities (1 -> Walking, 2 -> Standing...) from the "activity_labels" file.
 
 ###Train and Test sets
